@@ -1,0 +1,472 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+
+:root {
+  --verde: #0c443a;
+  --limon: #25d1b2;
+  --degradado: linear-gradient(90deg, var(--limon), var(--verde));
+}
+
+* {
+  font-family: "Dancing Script", cursive;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  /* text-transform: capitalize; */
+}
+
+*::selection {
+  background: var(--limon);
+  color: azure;
+}
+
+html {
+  font-size: 90%;
+  overflow: hidden;
+}
+
+body {
+  background: white;
+}
+
+/* .inicio {
+  min-height: 100vh;
+  padding: 0 9%;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+} */
+.btn {
+  display: block;
+  margin-top: 1rem;
+  border-radius: 3rem;
+  background: orangered;
+  padding: 0rem;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  transition: all 0.3s linear;
+  font-size: 17px;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  padding: 2rem 4%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+header .logo {
+  color: var(--verde);
+}
+header .logo span {
+  color: var(--limon);
+}
+
+header .navbar a {
+  font-size: 2.1rem;
+  margin-left: 1.4rem;
+  color: var(--verde);
+}
+
+header .navbar a:hover {
+  color: var(--limon);
+}
+
+header input {
+  display: none;
+}
+
+header label {
+  font-size: 3rem;
+  color: var(--verde);
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.inicio {
+  /* display: flex;
+  align-items: center; */
+  /* justify-content: center; */
+  /* background: url(../img/inicio_fondo.png) no-repeat; */
+  /* background-size: cover;
+  background-position: center; */
+  overflow: hidden;
+}
+.imagess {
+  margin-top: -35px;
+  width: 10vw;
+  animation: float 3s linear infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0rem);
+  }
+
+  50% {
+    transform: translateY(3.5rem);
+  }
+}
+.letraSize {
+  font-size: 24px;
+}
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 768px) {
+  header label {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    padding: 1rem 2rem;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.5rem rgba(0, 0, 0, 0.1);
+    transform: top;
+    transform: scaleY(0);
+    opacity: 0;
+    transition: 0.2s linear;
+  }
+
+  header .navbar a {
+    display: block;
+    margin: 2rem 0;
+    font-size: 2.9rem;
+  }
+  header input:checked ~ .navbar {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+
+  header input:checked ~ label::before {
+    content: "\f00d";
+  }
+
+  .inicio {
+    flex-flow: column-reverse;
+  }
+  .inicio .image {
+    width: 80%;
+  }
+
+  .inicio .content h3 {
+    font-size: 3.6rem;
+  }
+  .inicio .content p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 49%;
+  }
+}
+
+.pop {
+  font-family: "Poppins", sans-serif;
+}
+/* 
+Contenedor */
+.contenedor {
+ width: 88%;
+  margin-top: 60px;
+  /* padding-top: 80px; */
+ margin-bottom: 0%;
+  overflow: hidden;
+}
+
+.slider-contenedor {
+  width: 100%;
+  display: flex;
+}
+
+.contenido-slider {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.dos {
+  background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+}
+
+.uno {
+  background-image: linear-gradient(
+    to top,
+    #d5d4d0 0%,
+    #d5d4d0 1%,
+    #eeeeec 31%,
+    #efeeec 75%,
+    #e9e9e7 100%
+  );
+  color: var(--verde);
+}
+.contenido-slider > img {
+  width: 390px;
+  height: 230px;
+  border: 4px solid white;
+  border-radius: 8px;
+  padding: 0px;
+}
+
+.contenido-slider > div {
+  width: 35%;
+}
+
+.contenido-slider h3 {
+  font-weight: 150%;
+  text-align: justify;
+  line-height: 30px;
+}
+
+/* .contenido-slider a {
+  color: #fff;
+  background: orangered;
+  width: 100px;
+  display: block;
+  padding: 15px 0;
+  text-align: center;
+  border-radius: 3px;
+  margin-top: 20px;
+  text-decoration: none;
+} */
+
+/* .contenido-slider:nth-child(2) a {
+  background: #fff;
+  color: #332863;
+} */
+
+@media screen and (max-width: 900px) {
+  .contenido-slider > img {
+    width: 200px;
+  }
+
+  .contenido-slider > div {
+    width: 60%;
+  }
+
+  .contenido-slider h2 {
+    font-size: 23px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .contenido-slider {
+    flex-direction: column-reverse;
+  }
+
+  .contenido-slider > div {
+    width: 60%;
+  }
+}
+
+.informacion {
+  padding: 0% 2%;
+  text-align: right;
+
+  margin-top: -320px;
+  font-size: 26px;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: 1.6fr 0.6fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  background: url(../Img/inicio_fondo.png) no-repeat;
+}
+
+.nekros_rojo {
+  width: 130px;
+  height: 40px;
+  background: linear-gradient(
+    90deg,
+    rgba(49, 224, 237, 1) 0%,
+    rgba(65, 168, 217, 1) 35%,
+    rgba(54, 186, 218, 1) 100%
+  );
+
+  border-radius: 5px;
+  position: relative;
+  border-bottom: 4px solid #2b8bc6;
+  color: #fbfbfb;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  font-size: 18px;
+  text-align: left;
+  text-indent: 5px;
+  box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+
+  /* margin-bottom: 20px;
+  margin-left: 140px; */
+}
+
+.nekros_rojo:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 20px solid #187dbc;
+  border-bottom: 20px solid #187dbc;
+  border-left: 16px solid transparent;
+  border-right: 20px solid #187dbc;
+  position: absolute;
+  opacity: 0.8;
+  right: 0;
+  top: 0;
+  border-radius: 0 5px 5px 0;
+}
+
+
+/* Footer */
+
+.footer .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+
+.footer .box-container .box h3 {
+  font-size: 2.2rem;
+  color: var(--black);
+  padding: 1rem 0;
+}
+
+.footer .box-container .box a {
+  display: flex;
+  font-size: 1.4rem;
+  color: var(--light-color);
+  padding: 1rem 0;
+}
+
+.footer .box-container .box a i {
+  color: var(--green);
+  padding-right: 0.5rem;
+}
+
+.footer .box-container .box a:hover i {
+  padding-right: 2rem;
+}
+
+.footer .box-container .box .map {
+  width: 100%;
+}
+
+.footer .share {
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.footer .share a {
+  height: 4.5rem;
+  width: 4.5rem;
+
+  line-height: 5rem;
+  font-size: 2rem;
+  color: #fff;
+  background: var(--verde);
+  margin: 0 0.3rem;
+  border-radius: 50%;
+}
+
+.footer .share a:hover {
+  background: var(--limon);
+}
+
+.footer .credit {
+  border-top: var(--border);
+  margin-top: 0rem;
+  padding: 0 1rem;
+  padding-top: 2.5rem;
+  font-size: 2rem;
+  color: var(--light-color);
+  text-align: center;
+}
+
+.footer .credit span {
+  color: var(--green);
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5px auto; /* 15% from the top and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  /* Position it in the top right corner outside of the modal */
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+/* Close button on hover */
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}

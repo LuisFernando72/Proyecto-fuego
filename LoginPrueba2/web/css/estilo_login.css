@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+.login-container {
+  font-family: "Poppins", sans-serif;
+  height: 82.75em;
+  width: 105em;
+  margin: 6em auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.login-info-container {
+  font-family: "Poppins", sans-serif;
+  width: 50%;
+  align-items: center;
+  position: relative;
+  background-image: linear-gradient(180deg, #de2043 10%, #5be29a 90%);
+  padding: 12px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: #f2ecec 3px solid;
+}
+
+.inputs-container {
+  display: block;
+  top: 33%;
+  position: absolute;
+  width: 80%;
+  transition: 0.8s;
+}
+
+@media screen and (max-width: 1000px) {
+  .login-container {
+    width: 80%;
+    margin-top: 3rem;
+  }
+  .login-info-container {
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  .image-container {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .login-container {
+    width: 100%;
+  }
+}
+
+/* @media screen and (max-width: 500px) {
+  .container_log {
+    display: block;
+    top: 40%;
+    position: absolute;
+    width: 80%;
+    transition: 0.8s;
+  }
+} */
+
+.button-box {
+  width: 310px;
+  margin: 20px auto;
+  position: relative;
+  box-shadow: 0 0 12px 2px #5d1310;
+  border-radius: 30px;
+}
+
+.toggle-btn {
+  align-items: flex-start;
+  text-align: center;
+  padding: 12px 22px;
+  cursor: pointer;
+  background: transparent;
+  border: 0px;
+  outline: none;
+  position: relative;
+  font-size: 1.8rem;
+  color: white;
+}
+
+#elegir {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 160px;
+  height: 100%;
+  background-image: linear-gradient(140deg, #b31b37 5%, #50e796 95%);
+  border-radius: 20px;
+  transition: 0.8s;
+}
+
+/* NUEVO */
+
+.input-field {
+  width: 100%;
+  letter-spacing: 1px;
+  padding: 10px 0;
+  margin: 5px 0;
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 2px solid white;
+  outline: none;
+  background: transparent;
+  font-size: 1.9rem;
+}
+::placeholder {
+  color: rgb(77, 5, 5);
+}
+
+.input-field:hover {
+  margin: 5px 0;
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 2px solid #dc143c;
+}
+
+.submit-btn {
+  width: 80%;
+  padding: 12px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  background-image: linear-gradient(140deg, #b31b37 40%, #3cd985 95%);
+  border: 0px;
+  outline: none;
+  font-size: 17px;
+  border-radius: 30px;
+  font-weight: bold;
+  color: white;
+}
+.check-box {
+  margin: 30px 10px 30px 0;
+}
+
+/* Verificar esto */
+.espan {
+  color: rgb(28, 28, 28);
+  font-size: 1.4rem;
+  bottom: 64px;
+}
+
+#login {
+  left: 10%;
+}
+#registrar {
+  left: 100%;
+}
+
+.redes-sociales {
+  margin: 50px auto;
+  text-align: center;
+}
+
+.redes-sociales img {
+  width: 35px;
+  margin: 0 12px;
+  box-shadow: 0 0 20px 8px rgb(215, 171, 171);
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.image-container {
+  padding: 2rem;
+  width: 50%;
+  background-image: linear-gradient(180deg, #e43354 10%, #5be29a 90%);
+  border: #f2ecec 3px solid;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
