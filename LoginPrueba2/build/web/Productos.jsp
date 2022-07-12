@@ -15,6 +15,8 @@
             src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"
         ></script>
 
+
+
         <link
             rel="stylesheet"
             href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
@@ -36,7 +38,8 @@
 
         <!-- ESTO NOS VA A SERVIR -->
         <section class="featured" id="featured">
-            <h1 class="heading"><span>Accesorios y decoración</span></h1>
+            <h1 class="heading">
+                <span>Accesorios y decoración</span></h1>
 
             <div class="swiper featured-slider">
                 <div class="swiper-wrapper">
@@ -330,10 +333,10 @@
                 <div class="swiper-button-prev"></div>
             </div>
         </section>
-        <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
         <!-- custom js file link  -->
-        <script src="js/includeHTML.js" type="text/javascript"></script>
+        <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
         <script src="js/productos.js"></script>
 
     </body>

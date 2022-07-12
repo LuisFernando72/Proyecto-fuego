@@ -1,0 +1,179 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background: white;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 1.5em;
+}
+
+.content{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+    border-radius: 5em;
+}
+.logo{
+    text-align: center;
+    font-size: 3em;
+}
+.logo span{
+    color: rgb(243, 23, 74);
+}
+.contact-wraper{
+    box-shadow: 0 0 20px 0 rgba(255,255, 255, .3);
+}
+.contact-wraper>*{
+    padding: 1em;
+}
+.contact-form{
+    background: #222222;
+}
+.contact-form form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.contact-form form .block{
+    grid-column: 1 / 3;
+}
+.contact-form form p{
+    font-size: 18px;
+    margin: 0;
+    padding: 1em;
+    color:white;
+}
+
+.contact-form form input,
+.contact-form form textarea{
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: none;
+    color: #fff;
+    border-bottom: 1px solid rgb(255, 0, 64);
+}
+
+.centrar{
+  
+    display: block;
+    align-items: center;
+    text-align: center;
+}
+/*
+.contact-form form button{
+    width: 30%;
+    color: white;
+    background-color: rgb(202, 27, 62);
+    border: 0;
+    padding: 1em;
+}
+*/
+.contact-form form button:hover,
+.contact-form form button:focus{
+    background: rgb(255, 0, 119);
+    color: whitesmoke;
+    transition: cubic-bezier(0.39, 0.575, 0.565, 1);
+    outline: 0;
+
+}
+
+.contact-info{
+    background: #25d1b2;
+}
+
+.contact-info h4,
+.contact-info ul,
+.contact-info p{
+    text-align: center;
+    margin:  0 0 1rem 0;
+}
+
+.contact-info ul{
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info ul li{
+    padding: .2em;
+}
+
+@media (min-width: 700px){
+    body{
+        padding: 0;
+    }
+    .contact-wraper{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+
+    }
+    .contact-wraper > *{
+        padding: 2em;
+    }
+    .contact-info h4,
+    .contact-info ul,
+    .contact-info p{
+        padding: 1em;
+        text-align: left;
+        font-size: 15px;
+    }
+
+}
+
+.image-container {
+    padding: 0.6rem;
+    width: 40rem;
+    height: 45rem;
+    /* background-image: linear-gradient(180deg, #e43354 10%, #5be29a 90%); */
+    border: #f2ecec 2px solid;
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+  .nekros_rojo {
+    width: 130px;
+    height: 40px;
+    background: linear-gradient(
+        90deg,
+        rgba(49, 224, 237, 1) 0%,
+        rgba(65, 168, 217, 1) 35%,
+        rgba(54, 186, 218, 1) 100%
+        );
+
+    border-radius: 5px;
+    position: relative;
+    border-bottom: 4px solid #2b8bc6;
+    color: #fbfbfb;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+    font-size: 20px;
+    text-align: left;
+    text-indent: 5px;
+    box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    font-size: 16px;
+
+    /* margin-bottom: 20px;
+    margin-left: 140px; */
+}
+
+.nekros_rojo:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 20px solid #187dbc;
+    border-bottom: 20px solid #187dbc;
+    border-left: 16px solid transparent;
+    border-right: 20px solid #187dbc;
+    position: absolute;
+    opacity: 0.8;
+    right: 0;
+    top: 0;
+    border-radius: 0 5px 5px 0;
+}
+
+.hidden {
+  opacity: none;
+  visibility: hidden;
+}

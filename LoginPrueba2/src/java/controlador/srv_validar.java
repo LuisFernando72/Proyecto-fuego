@@ -46,13 +46,16 @@ public class srv_validar extends HttpServlet {
 
             if (loguear.getNombres() != null) {
                 request.setAttribute("usuario", loguear);
-                session.setAttribute("Nombres", loguear.getUsername());
+                session.setAttribute("Nombres", loguear.getNombres());
                 session.setAttribute("ID_CARGO", loguear.getIdCargo());
-                request.getRequestDispatcher("menu_admin.jsp").forward(request, response);
+                session.setAttribute("correo", loguear.getEmail());
+                session.setAttribute("Apellidos", loguear.getApellidos());
+                request.getRequestDispatcher("index.jsp").forward(request, response);
                 //    out.println("<h4>Bienvenido</h4>");
             } else {
-                request.getRequestDispatcher("lleva?menu=Principal").forward(request, response);
 
+                request.getRequestDispatcher("lleva?menu=Login").forward(request, response);
+             //   out.println("alert('Error en la conexion')");
             }
 
         } else {

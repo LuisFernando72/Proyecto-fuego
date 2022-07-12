@@ -13,10 +13,6 @@
         <servlet-class>controlador.srv_validar</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>srv_prueba</servlet-name>
-        <servlet-class>controlador.srv_prueba</servlet-class>
-    </servlet>
-    <servlet>
         <servlet-name>srv_cerrarSesion</servlet-name>
         <servlet-class>controlador.srv_cerrarSesion</servlet-class>
     </servlet>
@@ -31,10 +27,6 @@
     <servlet-mapping>
         <servlet-name>srv_validar</servlet-name>
         <url-pattern>/srv_validar</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>srv_prueba</servlet-name>
-        <url-pattern>/srv_prueba</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>srv_cerrarSesion</servlet-name>
